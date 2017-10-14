@@ -1,0 +1,427 @@
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+figure {
+  max-width:60%;
+}
+
+.topnav {
+    font-size: 16px; 
+}
+
+.lead {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+header {
+
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+.typewriter h2 {
+  overflow: hidden; 
+  font-size: 2em;
+  width:46%;
+  border-right: .15em solid orange; /* Cursor */
+  white-space: nowrap; 
+  margin: 2%     auto; /* Scrolling effect */
+  letter-spacing: .15em; 
+  -webkit-animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1.4s step-end infinite; 
+          animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1.4s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 46% }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 46% }
+}
+
+/* The cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/*
+==========================================================================================================
+                    =====        Page fade in animation   =====
+
+*/
+
+
+  
+  @keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+  
+  .fade-in {
+  animation: fadeIn ease-in-out 5s;
+  -webkit-animation: fadeIn ease-in-out 5s;
+  -moz-animation: fadeIn ease-in-out 5s;
+  -o-animation: fadeIn ease-in-out 5s;
+  -ms-animation: fadeIn ease-in-out 5s;
+}
+     
+
+/*
+==========================================================================================================
+*/
+
+
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+
+
+ul.badges {
+  list-style:none;
+  margin-top: 40px;
+  *zoom: 1; }
+  ul.badges:before, ul.badges:after {
+    content: " ";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+
+  ul.badges li {
+ 
+    -ms-flex-pack: distribute;
+ 
+        justify-content: space-around; }
+    ul.badges li:nth-child(3n) {
+      margin-right: 0 !important; }
+    ul.badges li img {
+      filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-filter: gray;
+              filter: gray;
+      -ms-flex-preferred-size:100%;
+          flex-basis:100%;
+      max-height: 80px;
+      opacity: 0.2;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      }
+      ul.badges li img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        opacity: 1; }
+
+
+ul.badges {
+    margin-top: 40px;
+}
+
+ul.badges li.row-1 {
+    width: 23.7288135593%;
+    float: left;
+    margin-right: 1.6949152542%;
+}
+
+ul.badges li {
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+          /* iphone 5 */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+.typewriter h2 {
+    width: 63%;
+
+}
+.typewriter h2 {
+ 
+    font-size: 1em;
+
+}
+
+}
+
+
+
+@media(max-width:769px) {
+
+
+.typewriter h2 {
+   /* Ensures the content is not revealed until the animation */
+    width:60%;
+
+  border-right: .15em solid blue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  -webkit-animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+          animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+address {font-size: 12px;}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 1em;
+    }
+    ul.badges li.row-1 {
+    width: 100%;
+    float: left;
+    
+}
+
+ul.badges li img{
+  max-height: 60px;
+}
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.modal-body {
+  color:#4d4d4d;
+  background-color: #eee;
+}
+
+.modal-title {
+  color:#4d4d4d;
+}
+
+@media (min-width: 992px) {
+.modal-lg {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 768px){
+
+.modal-dialog {
+    width: 806px;
+    
+  }
+ } 
+
+.thanks {text-align: center;line-height: 3.9;background-color: burlywood;}
+.thanks h1, p {line-height: 1.9;}
