@@ -45,4 +45,9 @@ $("input").keypress(function (e) {
   }
 });
 
-console.log('Looking for a developer ? Feel free to contact me on info@yannisspyrou.co.uk')
+// Programmaticaly change the date on footer
+var copy = document.getElementById('copy')
+var date =new Date()
+copy.textContent = date.getFullYear()
+
+console.log('Looking for a developer ? Feel free to contact me on js15js@gmail.com')
