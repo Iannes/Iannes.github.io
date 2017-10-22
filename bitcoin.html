@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bitcoin.css">
+  <title>Bitcoin Share Price</title>
+</head>
+<body onload=init()>
+  <section class="wrapper">
+
+      <h1>Bitcoin Current Price is: <span id="price"></span></h1>
+
+      <form action="#">
+
+      <select id="currency" onchange="currencySelect()">
+        <option value="GBP">GBP</option>
+        <option value="EUR">Euro</option>
+        <option value="USD">USD</option>
+      </select>
+
+      <a id='btn'>Refresh Data</a>
+      </form>
+
+      <p id="demo"></p>
+
+      <footer>
+        <h4>&copy; <span id="copy"></span> Yannis Spyrou</h4>
+
+      </footer>
+  </section>
+
+  <script src="js/bitcoin.js" charset="utf-8"></script>
+</body>
+</html>
