@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  background: linear-gradient(to right, #29323c, #485563);
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 10%;
+}
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#price {
+  color: #09c709;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+form #btn, form select {
+  padding: 10px 40px;
+  border-radius: 9px;
+  background: #da8f20;
+  color:#000;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+form #btn:focus, form select:focus {
+  outline: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer h4 {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: none;
+  }
+}
