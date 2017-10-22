@@ -13,12 +13,11 @@ function init() {
 btn.addEventListener('click', function () {
  var XHR = new XMLHttpRequest()
 
-XHR.onreadystatechange = function() {
-  if(XHR.readyState === 4 && XHR.status === 200) {
+XHR.onload = function() {
+  if(this.status === 200) {
     var data = JSON.parse(XHR.responseText).bpi
     price.textContent = data[value].rate + " " +value
   }
-
 }
   XHR.open("GET", url)
   XHR.send()
