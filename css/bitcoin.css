@@ -43,6 +43,7 @@ form #btn, form select {
   form #btn, form select {
     padding: 0 31px;
   }
+}
 form #btn:focus, form select:focus {
   outline: 0;
 }
