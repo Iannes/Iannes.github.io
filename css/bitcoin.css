@@ -39,6 +39,10 @@ form #btn, form select {
   cursor: pointer;
   margin-right: 20px;
 }
+@media only screen and (max-width: 600px) {
+  form #btn, form select {
+    padding: 0 31px;
+  }
 form #btn:focus, form select:focus {
   outline: 0;
 }
