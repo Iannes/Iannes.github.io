@@ -22,6 +22,10 @@ img {
   height: auto;
 }
 
+p {
+  margin: 2rem;
+}
+
 body {
   display: flex;
   margin: 2% auto;
@@ -30,6 +34,7 @@ body {
   justify-content: space-around;
   width: 100%;
   min-height: 80vh;
+  flex-wrap: wrap;
 }
 body .container {
   display: flex;
@@ -49,4 +54,17 @@ body .container button {
 }
 body .container button:focus {
   outline: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container {
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 2% auto;
+  }
+  h1 {
+    font-size: 25px;
+    margin: 5% auto;
+  }
 }
