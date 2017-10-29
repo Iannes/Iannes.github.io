@@ -35,8 +35,8 @@ body .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex: 1 1 100%;
-  width: 100%;
+  flex: 1 1 auto;
+  width: 75%;
   margin: 0 auto;
 }
 body .container button {
@@ -46,6 +46,7 @@ body .container button {
   padding: 10px 40px;
   background: transparent;
   border: 1px solid blue;
+  cursor:pointer;
 }
 body .container button:focus {
   outline: 0;
