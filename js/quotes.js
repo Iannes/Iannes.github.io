@@ -20,3 +20,38 @@ XHR.onreadystatechange = function() {
   XHR.open("GET", url, true)
   XHR.send()
 })
+
+$(jquerybtn).click(function() {
+  $.getJSON(url)
+   .done(function(data) {
+     quote.textContent = data
+   })
+})
+
+
+fetchbtn.addEventListener('click', function () {
+
+  fetch(url)
+   .then(function(req) {
+      req.json().then(function(data) {
+        quote.textContent =data
+      })
+   })
+    .catch(function() {
+      alert('error')
+    })
+
+})
+
+
+axiosbtn.addEventListener('click', function () {
+
+  axios.get(url)
+   .then(function(res) {
+        quote.textContent =res.data
+      })
+    .catch(function() {
+      alert('error')
+    })
+
+})
