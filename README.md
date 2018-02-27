@@ -10,9 +10,5 @@ My online [CV](http://yannisspyrou.co.uk/cv)
 
 Using an API to update Bitcoin's Current [Price](http://yannisspyrou.co.uk/bitcoin)
 
-## Ron Swanson Quote Generator using Ajax
-
-Using an API to generate random [Quotes](http://yannisspyrou.co.uk/quotes)
-
 # Website
 Yannis Spyrou [Website](http://yannisspyrou.co.uk)
