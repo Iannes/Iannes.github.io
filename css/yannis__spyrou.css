@@ -17,15 +17,22 @@ h6 {
     font-weight: 700;
 }
 
+a:focus {
+    outline: 0;
+}
 
 figure {
   max-width:60%;
 }
 
 .topnav {
-    font-size: 16px; 
+    font-size: 16px;
 }
-
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+    color: rgb(33, 150, 244);
+    transition: all ease-in-out .4s;
+}
 .lead {
     font-size: 1.3em;
     font-weight: 400;
@@ -35,27 +42,27 @@ figure {
 
 header {
 
-    padding-top: 50px; 
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/desk.jpg) no-repeat center center;
     background-size: cover;
 }
 
 
 .typewriter h2 {
-  overflow: hidden; 
+  overflow: hidden;
   font-size: 2em;
   width:46%;
   border-right: .15em solid orange; /* Cursor */
-  white-space: nowrap; 
+  white-space: nowrap;
   margin: 2%     auto; /* Scrolling effect */
-  letter-spacing: .15em; 
-  -webkit-animation: 
+  letter-spacing: .15em;
+  -webkit-animation:
     typing 3.5s steps(40, end),
-    blink-caret 1.4s step-end infinite; 
-          animation: 
+    blink-caret 1.4s step-end infinite;
+          animation:
     typing 3.5s steps(40, end),
     blink-caret 1.4s step-end infinite;
 }
@@ -87,7 +94,7 @@ header {
 */
 
 
-  
+
   @keyframes fadeIn{
   0% {
     opacity:0;
@@ -133,7 +140,7 @@ header {
   }
 }
 
-  
+
   .fade-in {
   animation: fadeIn ease-in-out 5s;
   -webkit-animation: fadeIn ease-in-out 5s;
@@ -141,7 +148,7 @@ header {
   -o-animation: fadeIn ease-in-out 5s;
   -ms-animation: fadeIn ease-in-out 5s;
 }
-     
+
 
 /*
 ==========================================================================================================
@@ -261,9 +268,9 @@ ul.badges {
 }
 
   ul.badges li {
- 
+
     -ms-flex-pack: distribute;
- 
+
         justify-content: space-around; }
     ul.badges li:nth-child(3n) {
       margin-right: 0 !important; }
@@ -310,7 +317,7 @@ ul.badges li {
 
           /* iphone 5 */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
 and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 {
 .typewriter h2 {
@@ -318,7 +325,7 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 
 }
 .typewriter h2 {
- 
+
     font-size: 1em;
 
 }
@@ -336,10 +343,10 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 
   border-right: .15em solid blue; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  -webkit-animation: 
+  -webkit-animation:
     typing 2.5s steps(40, end),
     blink-caret .75s step-end infinite;
-          animation: 
+          animation:
     typing 2.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
@@ -373,7 +380,7 @@ address {font-size: 12px;}
     ul.badges li.row-1 {
     width: 100%;
     float: left;
-    
+
 }
 
 ul.badges li img{
@@ -399,14 +406,21 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+.modal-content {
+    position: relative;
+    background-color: #000;
+}
 
 .modal-body {
-  color:#4d4d4d;
-  background-color: #eee;
+  color: #222127;
+  background-color: #ffc251;
+}
+.modal-header {
+ border-bottom: 1px solid #000;
 }
 
 .modal-title {
-  color:#4d4d4d;
+    color: #3479b1;
 }
 
 @media (min-width: 992px) {
@@ -418,10 +432,9 @@ p.copyright {
 @media (min-width: 768px){
 
 .modal-dialog {
-    width: 806px;
-    
+    width: 670px;
   }
- } 
+ }
 
 .thanks {text-align: center;line-height: 3.9;background-color: burlywood;}
 .thanks h1, p {line-height: 1.9;}
