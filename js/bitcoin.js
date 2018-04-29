@@ -1,16 +1,16 @@
-var btn = document.getElementById('btn')
-var price = document.getElementById('price')
-var url = "https://api.coindesk.com/v1/bpi/currentprice.json"
-var currency = document.getElementById('currency')
-var value = ""
+const btn = document.getElementById('btn')
+const price = document.getElementById('price')
+const url = "https://api.coindesk.com/v1/bpi/currentprice.json"
+const currency = document.getElementById('currency')
+let value = ""
 
-function init() {
+ const init = () => {
   currencySelect()
   document.getElementById('btn').click();
 
 }
 
-btn.addEventListener('click', function () {
+btn.addEventListener('click',  () => {
  var XHR = new XMLHttpRequest()
 
 XHR.onload = function() {
@@ -18,15 +18,16 @@ XHR.onload = function() {
     var data = JSON.parse(XHR.responseText).bpi
     price.textContent = data[value].rate + " " +value
   }
+
 }
   XHR.open("GET", url)
   XHR.send()
 })
-function currencySelect() {
+const currencySelect = () => {
   value = currency.value;
 }
 
 
-var copy = document.getElementById('copy')
-var date =new Date()
+const copy = document.getElementById('copy')
+const date =new Date()
 copy.textContent = date.getFullYear()
