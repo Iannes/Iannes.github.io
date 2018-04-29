@@ -115,11 +115,12 @@ select:after {
   width: 20px;
 
 }
-
+@media screen and (min-width: 992px) {
 select:hover,
 #btn:hover {
   background: rgb(26, 143, 226);
   color: #eee;
+  }
 }
 
 form {
