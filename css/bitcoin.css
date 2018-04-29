@@ -51,6 +51,7 @@ h2 {
 .data-container {
   box-shadow: 0 0 .25em 0 rgba(0,0,0,.25);
   padding: 5%;
+  border-radius: 9px;
 }
 
 .data-container h2 {
