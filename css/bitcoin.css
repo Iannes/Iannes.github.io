@@ -146,7 +146,6 @@ form #btn, form select {
 }
 @media only screen and (max-width: 600px) {
   form #btn, form select {
-    padding: 0 31px;
     margin-bottom: 2rem;
  }
 }
