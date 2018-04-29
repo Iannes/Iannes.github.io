@@ -1,43 +1,125 @@
 body {
   text-align: center;
-  background: linear-gradient(to right, #29323c, #485563);
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: #efefef;
+}
+
+header {
+  padding: 0 ;
+  margin:0;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-height: 100px;
+  box-shadow: 0 0 .25em 0 rgba(0,0,0,.25);
+  background: #eee;
 }
 
 h1 {
   font-size:35px;
+  line-height: 38px;
+  font-weight: 400;
 }
 
-h1, h2 {
-  margin-bottom: 10%;
+h2 {
+  line-height: 38px;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+
+    font-size: 28px;
+  }
+}
+
 .wrapper {
-  width: 70%;
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #eee;
+}
+@media screen and (min-width: 600px) {
+.wrapper {
+  width: 70%;
+  min-height: 80vh;
+  }
+}
+.data-container {
+  box-shadow: 0 0 .25em 0 rgba(0,0,0,.25);
+  padding: 5%;
+}
+
+.data-container h2 {
+  margin-bottom: 4rem;
 }
 
 #price {
   color: #09c709;
 }
 
+
+select,
+#btn {
+  transition: all .3s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+select {
+  position: relative;
+}
+
+select:after {
+  content: '';
+  background: url(../img/arrow.svg);
+  color: black;
+  position: absolute;
+  font-size:20px;
+  line-height:20px;
+  height:20px;
+  width: 20px;
+
+}
+
+select:hover,
+#btn:hover {
+  background: #75a820;
+  color: #eee;
+}
+
 form {
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
+  width:100%;
 }
 form #btn, form select {
-  padding: 10px 40px;
+  padding: 10px 75px;
   border-radius: 9px;
-  background: #da8f20;
+  background: transparent;
   color:#000;
-  font-size: 17px;
   cursor: pointer;
-  margin: 4px 2px;
+  font-size: 23px;
+  line-height: 30px;
+  font-weight:400;
+  letter-spacing:1px;
   cursor: pointer;
   margin-right: 20px;
+  border: .03125em solid #b0b0b0;
+ cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
   form #btn, form select {
