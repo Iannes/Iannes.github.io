@@ -7,7 +7,7 @@ if ( $(window).width() < 1200) {
   small();
 }
 
-console.log('If you are interested in my portfolio, please have a look at my online CV at http://yannisspyrou.co.uk/cv')
+console.info('If you are interested in my portfolio, please contact me on js15js@gmail.com')
 
 
 var copy = document.getElementById('copy')
