@@ -1,22 +1,35 @@
-const btn = document.getElementById('btn')
-const price = document.getElementById('price')
+//TODO
+// Convert AJAX to ES6 promises
+
+const body = document.querySelector('body')
+const dataContainer = document.querySelector('.data-container')
+const btn = document.querySelector('#btn')
+const price = document.querySelector('#price')
 const url = "https://api.coindesk.com/v1/bpi/currentprice.json"
-const currency = document.getElementById('currency')
+const currency = document.querySelector('#currency')
 let value = ""
 
- const init = () => {
-  currencySelect()
-  document.getElementById('btn').click();
+const loaded = () => {
+  body.classList.add('fade-in')
+  dataContainer.classList.add('loaded')
+}
 
+ const init = () => {
+  loaded()
+  currencySelect()
+  document.querySelector('#btn').click();
 }
 
 btn.addEventListener('click',  () => {
- var XHR = new XMLHttpRequest()
+ let XHR = new XMLHttpRequest()
 
 XHR.onload = function() {
   if(this.status === 200) {
-    var data = JSON.parse(XHR.responseText).bpi
-    price.textContent = data[value].rate + " " +value
+    let data = JSON.parse(XHR.responseText).bpi
+    // trim last two digits
+    let currency = data[value].rate
+    let trimmedCurrency = currency.substring(0, currency.length - 2);
+    price.textContent = `${trimmedCurrency} ${value}`
   }
 
 }
@@ -26,8 +39,6 @@ XHR.onload = function() {
 const currencySelect = () => {
   value = currency.value;
 }
-
-
-const copy = document.getElementById('copy')
-const date =new Date()
+const copy = document.querySelector('#copy')
+const date = new Date()
 copy.textContent = date.getFullYear()
