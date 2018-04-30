@@ -15,6 +15,8 @@ h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 a:focus {
@@ -35,9 +37,9 @@ figure {
 }
 .lead {
     font-size: 1.3em;
+    line-height: 1.4em;
     font-weight: 400;
-    text-align: justify;
-    word-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 header {
@@ -155,7 +157,13 @@ header {
 ==========================================================================================================
 */
 
-
+svg.icon {
+    max-width: 4rem;
+    fill: #f8f8f8;
+}
+path {
+    fill: #f8f8f8;
+}
 
 .intro-message {
     position: relative;
@@ -179,6 +187,26 @@ header {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.intro-social-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro-social-buttons {
+        justify-content: space-around;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .intro-social-buttons {
+        width:100%;
+    }
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -186,16 +214,6 @@ header {
 
     .intro-message > h1 {
         font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
     }
 
     .intro-divider {
@@ -223,6 +241,8 @@ header {
 
 .section-heading {
     margin-bottom: 30px;
+    color: #e64d34;
+    font-weight: 400;
 }
 
 .section-heading-spacer {
