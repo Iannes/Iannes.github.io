@@ -1,15 +1,17 @@
-function small() {
+let copy = document.getElementById('copy')
+let date = new Date()
+let win = window.innerWidth;
+const shell = document.querySelector("#shell")
 
-document.getElementById("shell").textContent="Digital Web Design";
+const smallScreens = () => {
+  if (win < 1200) {
+  shell.textContent="Welcome";
+  }
 }
 
-if ( $(window).width() < 1200) {
-  small();
-}
+
+
+copy.textContent = date.getFullYear()
+smallScreens()
 
 console.info('If you are interested in my portfolio, please contact me on js15js@gmail.com')
-
-
-var copy = document.getElementById('copy')
-var date =new Date()
-copy.textContent = date.getFullYear()
