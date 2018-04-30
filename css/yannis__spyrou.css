@@ -23,8 +23,24 @@ a:focus {
     outline: 0;
 }
 
+li {
+    transition: all 1s ease-in-out;
+    margin-right: 6rem;
+}
+@media screen and (min-width:1100px){
+    li:hover {
+        transform: scale(1.5);
+    }
+}
+
 figure {
   max-width:60%;
+}
+
+@media screen and (max-width:800px) {
+    figure{
+    margin: auto;
+    }
 }
 
 .topnav {
@@ -53,6 +69,10 @@ header {
     box-shadow: inset 0 0 0 1000px rgba(28, 11, 66, 0.6784313725490196);
 }
 
+section {
+    padding: 120px 0;
+    box-shadow: 0 0 0.25em 0 rgba(0,0,0,.25);
+}
 
 .typewriter h2 {
   overflow: hidden;
@@ -160,7 +180,9 @@ header {
 svg.icon {
     max-width: 4rem;
     fill: #f8f8f8;
+
 }
+
 path {
     fill: #f8f8f8;
 }
@@ -178,7 +200,7 @@ path {
 }
 
 .intro-divider {
-    width: 400px;
+    width: 30%;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
@@ -187,22 +209,34 @@ path {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.intro-social-buttons {
+.social-icons {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 30%;
-    margin: auto;
+    justify-content: center;
+}
+.wrapper {
+    max-width: 1030px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+section.work-together {
+    background: #66527d;
+    padding: 120px 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+section.work_together h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 42px;
 }
 
-@media screen and (max-width: 1200px) {
-    .intro-social-buttons {
-        justify-content: space-around;
-        width: 50%;
-    }
-}
+
+
 @media screen and (max-width: 640px) {
-    .intro-social-buttons {
+    .social-icons {
         width:100%;
     }
 }
@@ -228,16 +262,6 @@ path {
     letter-spacing: 2px;
 }
 
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
 
 .section-heading {
     margin-bottom: 30px;
@@ -273,68 +297,6 @@ path {
     margin-top: 0;
 }
 
-
-
-ul.badges {
-  list-style:none;
-  margin-top: 40px;
-  *zoom: 1; }
-  ul.badges:before, ul.badges:after {
-    content: " ";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-}
-
-  ul.badges li {
-
-    -ms-flex-pack: distribute;
-
-        justify-content: space-around; }
-    ul.badges li:nth-child(3n) {
-      margin-right: 0 !important; }
-    ul.badges li img {
-      filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      -webkit-filter: gray;
-              filter: gray;
-      -ms-flex-preferred-size:100%;
-          flex-basis:100%;
-      max-height: 80px;
-      opacity: 0.2;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      }
-      ul.badges li img:hover {
-        filter: none;
-        -webkit-filter: grayscale(0%);
-        opacity: 1; }
-
-
-ul.badges {
-    margin-top: 40px;
-}
-
-ul.badges li.row-1 {
-    width: 23.7288135593%;
-    float: left;
-    margin-right: 1.6949152542%;
-}
-
-ul.badges li {
-    margin-bottom: 1.25em;
-    text-align: center;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
 
           /* iphone 5 */
 
@@ -418,14 +380,49 @@ ul.badges li img{
         margin-bottom: 0;
     }
 }
+section.work-together .email__circle {
+    display: block;
+    margin: 0 auto 42px;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 120px;
+    text-align: center;
+    line-height: 120px;
+    color: #66527d;
+    text-decoration: none;
+    transition: all .7s ease-in-out;
+}
+@media screen and (min-width:1100px){
+    a.email__circle:hover {
+        transform: scale(1.2);
+    }
+}
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: white;
+    text-align: center;
+}
+
+path#github {
+    fill: black;
+}
+path#linkedin {
+    fill: #0072b0;
+}
+path#email {
+    fill: #90554c;
 }
 
 p.copyright {
-    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 18px;
 }
 .modal-content {
     position: relative;
