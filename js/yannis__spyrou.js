@@ -8,10 +8,8 @@ const smallScreens = () => {
   shell.textContent="Welcome";
   }
 }
-
-
-
 copy.textContent = date.getFullYear()
+
 smallScreens()
 
 console.info('If you are interested in my portfolio, please contact me on js15js@gmail.com')

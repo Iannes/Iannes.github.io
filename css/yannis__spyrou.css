@@ -1,4 +1,11 @@
 
+html {
+    box-sizing: border-box;
+}
+
+*,:after,:before {
+    box-sizing: inherit
+}
 
 body,
 html {
@@ -86,24 +93,24 @@ section {
   width:46%;
   border-right: .15em solid orange; /* Cursor */
   white-space: nowrap;
-  margin: 2%     auto; /* Scrolling effect */
-  letter-spacing: .15em;
+  margin: 2% auto; /* Scrolling effect */
+  letter-spacing:1px;
   -webkit-animation:
-    typing 3.5s steps(40, end),
+    typing 3.5s steps(45, end),
     blink-caret 1.4s step-end infinite;
           animation:
-    typing 3.5s steps(40, end),
+    typing 3.5s steps(45, end),
     blink-caret 1.4s step-end infinite;
 }
 
 /* The typing effect */
 @-webkit-keyframes typing {
   from { width: 0 }
-  to { width: 46% }
+  to { width: 42% }
 }
 @keyframes typing {
   from { width: 0 }
-  to { width: 46% }
+  to { width: 42% }
 }
 
 /* The cursor effect */
@@ -233,10 +240,15 @@ section.work-together {
     line-height: 24px;
     text-align: center;
 }
-section.work_together h2 {
+section.work-together h2 {
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 42px;
+}
+
+section.work-in-progress {
+    padding: 60px 0 0;
+    background: #fff;
 }
 
 
