@@ -33,9 +33,5 @@ $(document).ready(() => {
 })
 
 // Bind enter keypress with click function
-$("input").keypress((e) => {
-  if (e.which === 13) {
-    $("#addMobile").click();
-  }
-});
+$("input").keypress((e) => {if (e.which === 13) {$("#addMobile").click();}});
 
