@@ -35,3 +35,8 @@ $(document).ready(() => {
 // Bind enter keypress with click function
 $("input").keypress((e) => {if (e.which === 13) {$("#addMobile").click();}});
 
+
+const copy = document.querySelector('#copy')
+const date = new Date()
+copy.textContent = date.getFullYear()
+
