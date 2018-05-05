@@ -149,7 +149,7 @@ section {
 .typewriter h2 {
   overflow: hidden;
   font-size: 2em;
-  width: 46%;
+  width: 21%;
   border-right: 0.15em solid orange; /* Cursor */
   white-space: nowrap;
   margin: 2% auto; /* Scrolling effect */
@@ -165,7 +165,7 @@ section {
     width: 0;
   }
   to {
-    width: 42%;
+    width: 20%;
   }
 }
 @keyframes typing {
@@ -173,7 +173,7 @@ section {
     width: 0;
   }
   to {
-    width: 42%;
+    width: 20%;
   }
 }
 
@@ -344,7 +344,6 @@ section .column-wrapper .column-image > figure > img {
   .typewriter h2 {
     /* Ensures the content is not revealed until the animation */
     width: 60%;
-
     border-right: 0.15em solid blue; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     -webkit-animation: typing 2.5s steps(40, end),
