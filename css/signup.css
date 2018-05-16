@@ -35,6 +35,17 @@ input:focus {
   outline: none;
 }
 
+a.logo__text {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+a.logo__text:hover {
+  color: rgba(51, 41, 41, 0.76);
+}
+
 .signup-container {
   position: absolute;
   top: 50%;
