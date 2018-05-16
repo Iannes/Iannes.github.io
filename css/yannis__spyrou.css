@@ -328,7 +328,7 @@ section .column-wrapper .column-text {
   }
 }
 section .column-wrapper .column-image > figure > img {
-  max-height: 200px;
+  max-width: 239px;
   display: flex;
 }
 
