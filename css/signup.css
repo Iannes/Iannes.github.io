@@ -118,11 +118,11 @@ input:focus {
   z-index: 10;
 }
 
-.heading--primary {
+.heading-primary {
   font-size: 1.999rem;
 }
 
-.heading--secondary {
+.heading-secondary {
   font-size: 1.414rem;
 }
 
