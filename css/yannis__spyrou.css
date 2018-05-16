@@ -41,7 +41,7 @@ a:focus {
 
 li {
   transition: all 0.6s ease-in-out;
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 @media screen and (min-width: 1100px) {
   li:hover {
