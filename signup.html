@@ -9,7 +9,7 @@
   <title>Sign Up Form | Yannis Spyrou</title>
 </head>
 <body>
-  <section class="signup-container">
+  <section id="signup" class="signup-container">
     <div class="signup-container__inner signup-image">
       <article class="content text-center">
         <h1 class="heading-primary">Welcome</h1>
@@ -69,12 +69,40 @@
               <input class="button button-form" type="submit" value="Register" />
             </li>
             <li>
-              <a class="signup__link" href="#">I am already a member</a>
+              <a id="sign-in--trigger" class="signup__link" href="#">I am already a member</a>
             </li>
           </ul>
         </article>
       </form>
     </div>
   </section>
+
+  <section id="sign-in" class="modal">
+  <section class="signup-container signup-container__modal">
+    <div class="signup-container__inner signup__form">
+      <form action="#">
+
+        <article class="input-container">
+          <label for="email">Email</label>
+          <input class="form-control" type="text" name="email" id="email" placeholder="email@example.com" required />
+        </article>
+        <article class="input-container">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
+        </article>
+
+        <article class="button-container">
+          <ul class="list-inline">
+            <li>
+              <input class="button button-form" type="submit" value="Sign In" />
+            </li>
+          </ul>
+        </article>
+      </form>
+    </div>
+  </section>
+  </section>
+
+  <script src="js/signup.js"></script>
 </body>
 </html>

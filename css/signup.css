@@ -65,6 +65,15 @@ a.logo__text:hover {
   box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
 }
 
+#signup {
+  transition: all 1s ease-in-out;
+  transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+
+#signup.hide{
+  transform: translateY(500px);
+}
 .signup-container__inner.signup-image:after {
     content: '';
     width: 100%;
@@ -104,10 +113,14 @@ a.logo__text:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* background: url() */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+.signup-container__modal {
+    width: 31rem;
+    height: 21rem;
 }
 
 .login-button,
@@ -208,4 +221,66 @@ ul.social-icons.social-icons__footer {
     display: flex;
     width: 100%;
     margin: 20px auto;
+}
+
+.modal {
+  transform: translateY(-500px);
+  transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.modal.visible {
+  transform: translateY(463px);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease-in-out .7s forwards;
+  -webkit-animation: fadeOut ease-in-out .7s forwards;
+  -moz-animation: fadeOut ease-in-out .7s forwards;
+  -o-animation: fadeOut ease-in-out .7s forwards;
+  -ms-animation: fadeOut ease-in-out .7s forwards;
 }
