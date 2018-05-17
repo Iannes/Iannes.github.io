@@ -4,7 +4,7 @@
 
 ## Search US Population By City or state
 
-Using an API to search all US cities and states and list their Population[Search Form](https://yannisspyrou.com/filter)
+Using an API to search all US cities and states and list their Population. [Search Form](https://yannisspyrou.com/filter)
 
 ## Bitcoin Widget
 
