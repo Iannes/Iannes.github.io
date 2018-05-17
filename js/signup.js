@@ -19,7 +19,6 @@ signInTrigger.addEventListener('click', () => {
   signUp.classList.add('fade-out')
   signUp.classList.remove('fade-in')
   show()
-
 })
 
 signUpTrigger.addEventListener('click', () => {
