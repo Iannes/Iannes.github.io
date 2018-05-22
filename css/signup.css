@@ -1,8 +1,16 @@
+* {
+  padding: 0;
+  margin:0;
+}
 
+html {
+  box-sizing: border-box;
+}
 
 body {
+  box-sizing: inherit;
   font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
-  background: #e9e9e9;
+  background: rgba(0, 0, 0, 0.68);
 
 }
 
