@@ -307,11 +307,11 @@ section.work-in-progress {
 section .section-wrapper {
   display: flex;
   margin: auto;
+  text-align: center;
 }
 @media screen and (min-width: 1400px) {
   section .section-wrapper {
     max-width: 1280px;
-    text-align: center;
     margin: auto;
   }
 }
