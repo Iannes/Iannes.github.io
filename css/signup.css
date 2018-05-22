@@ -20,6 +20,12 @@ a,
 ul {
   list-style-type: none;
 }
+@media screen and (max-width:768px) {
+  ul {
+    padding:0;
+    display: flex;
+  }
+}
 li {
     margin-left: 2rem;
 }
@@ -70,6 +76,11 @@ a.logo__text:hover {
   border-radius: 0.1875rem;
   box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width:768px) {
+  .signup-container {
+    max-width: 85%;
+  }
+}
 
 #signup {
   transition: all 1s ease-in-out;
@@ -80,7 +91,7 @@ a.logo__text:hover {
 #signup.hide{
   transform: translateY(500px);
 }
-.signup-container__inner.signup-image:after {
+.signup-container__inner.signup-column__left:after {
     content: '';
     width: 100%;
     z-index: 9;
@@ -113,15 +124,22 @@ a.logo__text:hover {
   color: #fff;
 }
 
-.signup-image {
+
+.signup-column__left {
   position: relative;
   padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-repeat: no-repeat;
+  /* background: url() */
+  /* background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: cover; */
+}
+@media screen and (max-width:768px) {
+  .signup-column__left {
+    display: none;
+  }
 }
 
 .signup-container__modal {
@@ -180,6 +198,11 @@ form {
     flex: 1 1 50%;
     padding: 0 2.5rem;
 }
+@media screen and (max-width:768px) {
+  .signup__form {
+    padding: 0 10px;
+  }
+}
 
 label {
   font-size: 0.85rem;
@@ -207,6 +230,11 @@ label {
   background: #111;
   border-radius: 2.1875rem;
   cursor: pointer;
+}
+@media screen and (max-width:768px) {
+  .button-form {
+    width: 100%;
+  }
 }
 .button-form:focus, .button-form:hover {
   background: #323232;
