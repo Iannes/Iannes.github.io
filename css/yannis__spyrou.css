@@ -7,7 +7,14 @@ html {
 :before {
   box-sizing: inherit;
 }
-a{color: #337ab7;text-decoration: none;transition: all .7s ease-in-out;}a:hover{color:#84bae8;}
+a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out;
+}
+a:hover {
+  color: #84bae8;
+}
 body,
 html {
   width: 100%;
@@ -60,7 +67,7 @@ figure {
   }
 }
 
-.column-text__content {
+.section-text__content {
   font-size: 1.3em;
   line-height: 1.4em;
   font-weight: 400;
@@ -269,12 +276,16 @@ section.work-together h2 {
   margin-bottom: 42px;
 }
 
+section.work-together__alternate {
+  background: rgba(6, 111, 92, 0.6784313725490196);
+}
+
 section.work-in-progress {
   padding: 60px 0 0;
   background: #fff;
 }
 
-.column-text__title {
+.section-text__title {
   margin-bottom: 30px;
   color: #e64d34;
   font-weight: 400;
@@ -293,38 +304,40 @@ section.work-in-progress {
   font-size: 3em;
 }
 
-section .column-wrapper {
+section .section-wrapper {
   display: flex;
   margin: auto;
 }
 @media screen and (min-width: 1400px) {
-  section .column-wrapper {
+  section .section-wrapper {
     max-width: 1280px;
+    text-align: center;
+    margin: auto;
   }
 }
 @media screen and (max-width: 991px) {
-  section .column-wrapper {
+  section .section-wrapper {
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
 }
 
-section .column-wrapper .column-text {
+section .section-wrapper .section-text {
   padding: 30px 0;
-  flex: 5;
 }
 @media screen and (min-width: 1550px) {
-  section .column-wrapper .column-text__content {
-    max-width: 65%;
+  section .section-wrapper .section-text__content {
+    max-width: 68%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 991px) {
-  section .column-wrapper .column-text__content {
+  section .section-wrapper .section-text__content {
     max-width: 100%;
   }
 }
-section .column-wrapper .column-image > figure > img {
+section .section-wrapper .column-image > figure > img {
   max-width: 239px;
   display: flex;
 }
