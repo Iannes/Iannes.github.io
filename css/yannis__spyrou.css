@@ -148,15 +148,12 @@ section {
 
 .typewriter h2 {
   overflow: hidden;
-  font-size: 2em;
-  width: 21%;
-  border-right: 0.15em solid orange; /* Cursor */
+  font-size: 2.8em;
+  width: 28%;
+  /* border-right: 0.15em solid orange; Cursor */
   white-space: nowrap;
   margin: 2% auto; /* Scrolling effect */
   letter-spacing: 1px;
-  -webkit-animation: typing 3.5s steps(45, end),
-    blink-caret 1.4s step-end infinite;
-  animation: typing 3.5s steps(45, end), blink-caret 1.4s step-end infinite;
 }
 
 /* The typing effect */
@@ -165,7 +162,7 @@ section {
     width: 0;
   }
   to {
-    width: 20%;
+    width: 80%;
   }
 }
 @keyframes typing {
@@ -173,7 +170,7 @@ section {
     width: 0;
   }
   to {
-    width: 20%;
+    width: 80%;
   }
 }
 
@@ -334,7 +331,7 @@ section .column-wrapper .column-image > figure > img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
   .typewriter h2 {
-    width: 63%;
+    width: 68%;
   }
   .typewriter h2 {
     font-size: 1em;
