@@ -5,7 +5,9 @@ const margin = { top: 20, right: 20, bottom: 20, left: 20 },
   radius = width / 2;
 
 // color range
-const color = d3.scaleOrdinal(d3.schemeBlues[8])
+
+const color = d3.scaleOrdinal()
+.range(["#BBDEFB", "#90CAF9", "#64B5F6", "#42A5F5", "#2196F3", "#1E88E5", "#1976D2"]);
 
 // pie chart arc. Need to create arcs before generating pie
 const arc = d3.arc()
