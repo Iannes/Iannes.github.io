@@ -15,4 +15,4 @@ Using an API to search all US cities and states and list their Population. [Sear
 Using an API to update [Bitcoin's Current Price](https://yannisspyrou.com/bitcoin)
 
 # Website
-[Yannis Spyrou](https://yannisspyrou.com)
+[Yannis Spyrou](http://yannisspyrou.co.uk)
