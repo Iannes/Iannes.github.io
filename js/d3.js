@@ -46,9 +46,22 @@ var svg2 = d3.select("body").append("svg")
 // import data
 d3.csv("data.csv").then(data => {
   // parse data
-  data.forEach(d => {
-    d.percent = +d.percent;
-    d.tech = d.tech;
+  console.log(data)
+  // Check the headings of our CSV
+  // Code assumes that numbers come second and we only get two pieces of data
+  const headers = data.columns
+  let key
+  let num
+
+  data.map( d => {
+      console.log(d)
+      headers.map( (h,i) => {
+        // console.log( i ,d[h])
+        i === 0 ? key = d[h] : num = +d[h]
+        console.log(key, num)
+      })
+    // d.percent = +d.percent;
+    // d.tech = d.tech;
   })
 
   // "g element is a container used to group other SVG elements"
