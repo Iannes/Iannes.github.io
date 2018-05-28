@@ -3,7 +3,7 @@ const copy = document.getElementById('copy'),
       win = window.innerWidth,
       shell = document.querySelector("#shell")
 
-const smallScreens = () => win < 1200 ? shell.textContent = "Welcome" : shell.textContent = "Bespoke Web Design"
+const smallScreens = () => win < 1200 ? shell.textContent = "Welcome" : shell.textContent = "I like creating stuff"
 copy.textContent = date.getFullYear()
 
 smallScreens()
